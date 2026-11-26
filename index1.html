@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chillathothi's Family - Housewarming Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg,#3d101b,#721f2d,#3d101b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.invitation {
+    max-width: 550px;
+    width: 100%;
+    background: #fff8e9;
+    padding: 12px;
+    border: 2px solid #d6ac58;
+    box-shadow: 0 20px 60px #0008;
+    animation: appear 1.2s ease;
+}
+
+.inner {
+    border: 1px solid #c49a4a;
+    padding: 35px 22px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner::before,
+.inner::after {
+    content: "✿";
+    position: absolute;
+    font-size: 65px;
+    color: #e6c98d;
+    opacity: .5;
+}
+
+.inner::before {
+    top: 0;
+    left: 8px;
+}
+
+.inner::after {
+    bottom: 0;
+    right: 8px;
+}
+
+.ornament {
+    color: #a47b35;
+    font-size: 26px;
+    letter-spacing: 8px;
+}
+
+.greeting {
+    color: #a17b36;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+}
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 75px;
+    color: #871f30;
+    margin-top: 8px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #a47b35;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.house {
+    font-size: 65px;
+    margin: 10px 0;
+    filter: drop-shadow(0 4px 4px #c8a36b);
+}
+
+.message {
+    font-size: 14px;
+    line-height: 2;
+    color: #604735;
+    margin: 15px auto;
+    max-width: 420px;
+}
+
+.family {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #8b2636;
+    margin: 12px 0;
+    font-weight: 700;
+}
+
+.divider {
+    color: #bd9449;
+    margin: 22px 0;
+    font-size: 22px;
+}
+
+.details {
+    background: #f5ead3;
+    border: 1px solid #d8b978;
+    padding: 20px 10px;
+    margin: 20px 0;
+}
+
+.detail {
+    margin: 12px 0;
+    color: #66472c;
+    font-size: 14px;
+}
+
+.detail strong {
+    display: block;
+    color: #8b2636;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+.footer {
+    color: #8b2636;
+    font-family: 'Tangerine', cursive;
+    font-size: 39px;
+    margin-top: 20px;
+}
+
+.lamps {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+button {
+    background: #8b2636;
+    color: white;
+    border: 1px solid #d8b978;
+    padding: 13px 28px;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover {
+    background: #b08339;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:480px) {
+    .inner {
+        padding: 30px 12px;
+    }
+
+    h1 {
+        font-size: 62px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .family {
+        font-size: 22px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .invitation {
+        box-shadow: none;
+        border: 2px solid #d6ac58;
+    }
+
+    button {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="invitation">
+<div class="inner">
+
+    <div class="ornament">❀ ✧ ❀</div>
+
+    <div class="greeting">
+        WITH THE BLESSINGS OF GOD
+    </div>
+
+    <div class="lamps">🪔 🙏 🪔</div>
+
+    <h1>Gruhapravesam</h1>
+
+    <h2>HOUSEWARMING CEREMONY</h2>
+
+    <div class="house">🏡</div>
+
+    <div class="divider">━━━━ ❀ ━━━━</div>
+
+    <p class="message">
+        With immense joy and gratitude,
+        we invite you and your family
+        to grace the auspicious occasion
+        of our new home celebration.
+        Your presence and blessings
+        will make this day truly special.
+    </p>
+
+    <div class="divider">✧ ❀ ✧</div>
+
+    <p style="font-size:13px;color:#a17b36;">
+        CORDIALLY INVITED BY
+    </p>
+
+    <div class="family">
+        Chillathothi's Family
+    </div>
+
+    <div class="details">
+
+        <div class="detail">
+            <strong>📅 Date</strong>
+            DD / MM / YYYY
+        </div>
+
+        <div class="detail">
+            <strong>⏰ Time</strong>
+            10:00 AM onwards
+        </div>
+
+        <div class="detail">
+            <strong>📍 Venue</strong>
+            Your New Home Address
+        </div>
+
+    </div>
+
+    <div class="divider">━━━━ ❀ ━━━━</div>
+
+    <div class="footer">
+        We Await Your Presence!
+    </div>
+
+    <p style="font-size:13px;color:#76583a;margin-top:10px;">
+        Come, celebrate happiness and new beginnings with us.
+    </p>
+
+    <div class="lamps">🪔 🌸 🪔</div>
+
+    <button onclick="window.print()">
+        ✨ Print / Save Invitation
+    </button>
+
+</div>
+</div>
+
+</body>
+</html>
